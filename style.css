@@ -17,12 +17,18 @@ body {
   color: white;
 }
 
-input {
+input,
+select {
   height: 1.8rem;
   width: 90%;
   display: block;
   margin: 0 auto;
   border-radius: 4px;
+}
+
+select {
+  margin-top: 0.5rem;
+  width: 100%;
 }
 
 .label {
@@ -53,6 +59,7 @@ input {
   padding: 1rem;
   width: 90%;
   margin: 0 auto;
+  font-size: 1.4rem;
 }
 
 #h1-header {
@@ -61,4 +68,10 @@ input {
 
 #p-header {
   margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
 }

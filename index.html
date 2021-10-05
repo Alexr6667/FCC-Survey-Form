@@ -15,21 +15,41 @@
     <div class="container">
         <form class="form-control">
             <div class="label">
-                <label for="name">Name</label>
+                <label id="name-label" for="name">Name</label>
             </div>  
             <input type="text" placeholder="Enter your name" required>
         </form>
         <form class="form-control">
             <div class="label">
-                <label for="email">Email</label>
+                <label id="email-label" for="email">Email</label>
             </div>  
             <input type="email" placeholder="Enter your email" required>
         </form>
         <form class="form-control">
             <div class="label">
-                <label for="age">Age (optional)</label>
+                <label id="number-label" for="age">Age</label>
             </div>  
-            <input type="text" placeholder="Age" required>
+            <input type="number" placeholder="Age" min="10" max="150" required>
+        </form>
+        <form class="form-control">
+            <div class="label">
+                <label>What is your electronics specialisation?</label>
+                <select id="dropdown" name="specialisation" required>
+                    <option class="placeholder" selected disabled value="">Select Specialisation</option>
+                    <option value="ev">Electric Vehicles (EV's)</option>
+                    <option value="batteries">Batteries</option>
+                    <option value="pcb-manufacture">PCB Manufacturing</option>
+                    <option value="micro-controllers">Micro Controllers</option>
+                </select>
+            </div>
+        </form>
+        <form class="form-control">
+            <div class="label">
+                <p>Does your specialisation pay well?</p>
+                <input name="spec-pay" id="very-well" value="very-well" type="radio" checked>
+                <label for="very-well">Very Well</label>
+                
+            </div>
         </form>
     </div>
     
